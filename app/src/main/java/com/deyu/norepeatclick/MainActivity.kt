@@ -1,11 +1,11 @@
-package com.yugo.norepeatclick
+package com.deyu.norepeatclick
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import com.yugo.norepeatclicklistener.NoRepeatClickListener
+import com.deyu.norepeatclicklistener.NoRepeatClickListener
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -1,6 +1,31 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
+
+publishing {
+
+}
+
+//Step II: Add the below publish details
+publish {
+
+    def groupProjectID = 'com.deyu'
+    def artifactProjectID = 'norepeatclicklistener'
+    def publishVersionID = '1.0.0'
+
+    userOrg = 'deyugogo'
+    repoName = 'maven'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = '不重複的點擊監聽.'
+    website = 'https://github.com/DeyuGoGo/NoRepeatClickListener'
+
+}
+
+
 android {
     compileSdkVersion 28
 
@@ -9,7 +34,7 @@ android {
         minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
