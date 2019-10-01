@@ -1,4 +1,4 @@
-package com.yugo.norepeatclicklistener
+package com.deyu.norepeatclicklistener
 
 object NoRepeatClickListenerConfig {
     var DefaultInterval = 2000

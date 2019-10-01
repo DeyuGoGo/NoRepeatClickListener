@@ -1,9 +1,9 @@
-package com.yugo.norepeatclicklistener
+package com.deyu.norepeatclicklistener
 
 import android.os.SystemClock
 import android.util.Log
 import android.view.View
-import com.yugo.norepeatclicklistener.NoRepeatClickListenerConfig.DefaultInterval
+import com.deyu.norepeatclicklistener.NoRepeatClickListenerConfig.DefaultInterval
 
 class NoRepeatClickListener(
     private val onNoRepeatCLick: (View) -> Unit

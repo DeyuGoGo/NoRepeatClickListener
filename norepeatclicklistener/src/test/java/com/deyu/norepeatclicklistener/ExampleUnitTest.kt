@@ -1,4 +1,4 @@
-package com.yugo.norepeatclicklistener
+package com.deyu.norepeatclicklistener
 
 import org.junit.Test
 
