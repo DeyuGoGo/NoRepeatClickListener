@@ -1,5 +1,5 @@
 package com.deyu.norepeatclicklistener
 
 object NoRepeatClickListenerConfig {
-    var DefaultInterval = 2000
+    var DefaultInterval = 2000L
 }

@@ -2,13 +2,14 @@ apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-
+def mNowVersionName = '1.0.1'
+def mNowVersionCode = 10001
 
 publish {
 
     def groupProjectID = 'com.deyu'
     def artifactProjectID = 'norepeatclicklistener'
-    def publishVersionID = '1.0.0'
+    def publishVersionID = mNowVersionName
 
     userOrg = 'deyugogo'
     repoName = 'maven'
@@ -28,8 +29,8 @@ android {
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0.0"
+        versionCode mNowVersionCode
+        versionName mNowVersionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
